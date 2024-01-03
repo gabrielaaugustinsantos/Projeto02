@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        <hr>
+        <form action="/calcular" method="post">
+            <label for="valor1">Operando 01:</label>
+            <input type="number" name="valor1" id="valor1" size="15" maxlength="3">
+            <br><br>
+
+            <label for="valor2">Operando 02:</label>
+            <input type="number" name="valor2" id="valor2" size="15" maxlength="3">
+            <br><br>
+
+            <label for="tipo">Operador:</label>
+            <select name="tipo" id="tipo">
+                <option value="1">Selecione um Operador</option>
+                <option value="2">Somar</option>
+                <option value="3">Subtrair</option>
+                <option value="4">Multiplicar</option>
+                <option value="5">Dividir</option>
+            </select>
+            <br><br>
+
+            <input type="submit" value="Calcular">
+            <input type="submit" value="Limpar">
+        </form>
+    </body>
+</html>
